@@ -1,0 +1,160 @@
+/* line 9, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+* {
+  box-sizing: border-box; }
+
+@page {
+  margin: 0; }
+
+/* line 17, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+body, html {
+  font-family: 'Roboto';
+  background-color: #E0E0E0; }
+
+/* line 21, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+.body {
+  max-width: 1500px;
+  margin: auto; }
+  @media screen and (min-width: 1000px) {
+    /* line 21, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+    .body {
+      padding: 2rem; } }
+
+/* line 29, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+.clearfix {
+  clear: both; }
+
+/* line 33, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+h2 {
+  color: rgba(66, 146, 223, 0.5);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 1.75rem;
+  column-span: all; }
+
+/* line 43, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+h4 {
+  color: rgba(67, 67, 67, 0.5);
+  font-size: 1.25rem;
+  margin: 0; }
+
+/* line 49, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+a {
+  color: rgba(67, 67, 67, 0.5);
+  text-decoration: none; }
+
+/* line 56, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+.side {
+  padding: 0.5rem;
+  font-size: 1.25rem; }
+  /* line 58, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .side img {
+    transform: scaleX(-1);
+    max-width: 400px; }
+  @media screen and (min-width: 1200px) {
+    /* line 56, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+    .side {
+      direction: rtl;
+      width: 20%;
+      text-align: right;
+      float: left;
+      height: 100%;
+      padding: 1rem; }
+      /* line 72, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+      .side h2 {
+        margin-top: 5rem; } }
+  /* line 77, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .side h1 {
+    text-transform: uppercase;
+    font-size: 2.25rem;
+    color: #434343;
+    margin: 0;
+    margin-top: 1.75rem; }
+  /* line 85, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .side span {
+    color: rgba(67, 67, 67, 0.5); }
+  /* line 89, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .side .skills span {
+    color: rgba(67, 67, 67, 0.8); }
+
+/* line 95, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+.main {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  color: rgba(67, 67, 67, 0.8); }
+  @media screen and (min-width: 1200px) {
+    /* line 95, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+    .main {
+      float: left;
+      width: 79.9999%;
+      border-left: 0.125rem solid rgba(66, 146, 223, 0.5);
+      padding: 1rem; } }
+  /* line 107, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main h3 {
+    font-weight: 500;
+    color: #434343;
+    font-size: 2rem;
+    margin: 0.5rem 0; }
+  /* line 115, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main ul {
+    list-style: none !important;
+    margin-top: 0; }
+    /* line 118, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+    .main ul li {
+      position: relative;
+      margin-top: 0;
+      margin-bottom: 1rem; }
+      /* line 122, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+      .main ul li:before {
+        content: "";
+        background: #95989A;
+        position: absolute;
+        width: 0.0625rem;
+        top: 0.3125rem;
+        bottom: -1.3125rem;
+        left: -1.59375rem; }
+      /* line 131, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+      .main ul li:after {
+        content: "";
+        background: #E0E0E0;
+        border: 0.0625rem solid #95989A;
+        position: absolute;
+        width: 0.75rem;
+        height: 0.75rem;
+        border-radius: 100%;
+        top: 0.3125rem;
+        left: -2rem; }
+      /* line 142, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+      .main ul li:last-child:before {
+        content: "";
+        background: #E0E0E0; }
+  /* line 150, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main .experience span, .main .education span {
+    font-size: 1rem;
+    color: rgba(67, 67, 67, 0.5); }
+  @media screen and (min-width: 800px) {
+    /* line 156, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+    .main .projects {
+      column-count: 2; } }
+  /* line 160, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main .projects h3 {
+    margin: 0; }
+  /* line 163, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main .projects h4 {
+    text-transform: uppercase; }
+  /* line 168, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main .projects p {
+    margin-top: 0; }
+  /* line 171, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main .projects div {
+    break-inside: avoid-column; }
+  @media screen and (min-width: 800px) {
+    /* line 177, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+    .main .other {
+      column-count: 2; } }
+  /* line 181, /Users/alexanderedwards/Documents/projects/AETech999.github.io/main.scss */
+  .main .other div {
+    break-inside: avoid-column; }
+
+/*# sourceMappingURL=main.css.map */
