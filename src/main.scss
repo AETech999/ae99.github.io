@@ -1,0 +1,185 @@
+$blue: rgba(66,146,223,0.5); //#91B9E0
+$dark: rgba(67,67,67,1);
+$medium: rgba(67,67,67,0.8);
+$light: rgba(67,67,67,0.5);
+
+$su: 0.0625rem;
+$lu: 1rem;
+
+* {
+    box-sizing: border-box;
+}
+
+@page {
+    margin: 0;
+}
+
+body, html {
+    font-family: 'Roboto';
+    background-color: #E0E0E0;
+}
+.body {
+    max-width: 1500px;
+    margin: auto;
+    @media screen and (min-width: 1000px){
+        padding: 2*$lu;
+    }
+}
+
+.clearfix {
+    clear: both;
+}
+
+h2 {
+    color: $blue;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 2*$lu;
+    margin-bottom: 0;
+    margin-top: 1.75*$lu;
+    column-span: all;
+}
+
+h4 {
+    color: $light;
+    font-size: 1.25*$lu;
+    margin: 0;
+}
+
+a {
+    color: $light;
+    text-decoration: none;
+}
+
+
+
+.side {
+    
+    img {
+        transform: scaleX(-1);
+        max-width: 400px;
+    }
+    
+    
+    padding: 0.5*$lu;
+    @media screen and (min-width: 1200px){
+        direction: rtl;
+        width: 20%;
+        text-align: right;
+        float: left;
+        height: 100%;
+        padding: $lu;
+        h2 {
+            margin-top: 5rem;
+        }
+    }
+    font-size: 1.25*$lu;
+    h1 {
+        text-transform: uppercase;
+        font-size: 2.25*$lu;
+        color: $dark;
+        margin: 0;
+        margin-top: 1.75*$lu;
+    }
+    
+    span {
+        color: $light;      
+    }
+    .skills {
+        span {
+            color: $medium;
+        }
+    }
+}
+
+.main {
+    padding: 0.5*$lu;
+    @media screen and (min-width: 1200px){
+        float: left;
+        width: 79.9999%;
+        border-left: 2*$su solid $blue;
+        padding: $lu;
+    }
+    
+    font-size: 1.25*$lu;
+    color: $medium;
+    
+    h3 {
+        font-weight: 500;
+        color: $dark;
+        font-size: 2*$lu;
+        margin: 0.5*$lu 0;
+    }
+    
+    
+    ul {
+        list-style: none !important;
+        margin-top: 0;
+        li {
+            position: relative;
+            margin-top: 0;
+            margin-bottom: $lu;
+            &:before {
+                content: "";
+                background: #95989A;
+                position: absolute;
+                width: $su;
+                top: 5*$su;
+                bottom: -21*$su;
+                left: -25.5*$su;
+            }
+            &:after {
+                content: "";
+                background: #E0E0E0;
+                border: $su solid #95989A;
+                position: absolute;
+                width: 0.75*$lu;
+                height: 0.75*$lu;
+                border-radius: 100%;
+                top: 5*$su;
+                left: -32*$su;
+            }
+            &:last-child:before {
+                content: "";
+                background: #E0E0E0;
+            }
+        }
+    }
+
+    .experience, .education {
+        span {
+            font-size: 1rem;
+            color: $light;
+        }
+    }
+    
+    .projects {
+        @media screen and (min-width: 800px){
+            column-count: 2;
+        }
+        h3 {
+            margin: 0;
+        }
+        h4 {
+            text-transform: uppercase;
+        }
+        
+        
+        p {
+            margin-top: 0;
+        }
+        div {
+            break-inside: avoid-column;
+        }
+
+    }
+    
+    .other {
+        @media screen and (min-width: 800px){
+            column-count: 2;
+        }
+        div {
+            break-inside: avoid-column;
+        }
+    }
+}
