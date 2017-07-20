@@ -1,2 +1,2 @@
-# ae99.github.io
-My personal resume website.
+# Alexander Craigh Edwards
+# Personal Resume Site
